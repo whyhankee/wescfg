@@ -1,0 +1,47 @@
+import eslint from "@eslint/js"
+import eslintConfigPrettier from "eslint-config-prettier"
+import simpleImportSort from "eslint-plugin-simple-import-sort"
+import tseslint from "typescript-eslint"
+
+export const eslintRules = {
+	// utility
+	"no-console": [
+		"error",
+		{
+			allow: ["info", "warn", "error", "debug"],
+		},
+	],
+	"require-await": "error",
+
+	// readability
+	"no-magic-numbers": "error",
+	"no-trailing-spaces": "error",
+
+	// simple-import-sort plugin
+	"simple-import-sort/exports": "error",
+	"simple-import-sort/imports": "error",
+}
+
+export const eslintConfig = [
+	{
+		plugins: {
+			"simple-import-sort": simpleImportSort,
+		},
+	},
+	eslint.configs.recommended,
+	...tseslint.configs.recommended,
+	{rules: eslintRules},
+	eslintConfigPrettier,
+]
+
+export const prettierConfig = {
+	arrowParens: "always",
+	bracketSpacing: false,
+	endOfLine: "lf",
+	printWidth: 90,
+	semi: false,
+	singleAttributePerLine: true,
+	singleQuote: false,
+	trailingComma: "all",
+	useTabs: true,
+}

@@ -1,0 +1,37 @@
+{
+	"name": "@whyhankee/eslint-config",
+	"version": "0.0.1",
+	"description": "ESLint configuration for my projects",
+	"public": true,
+	"main": "src/index.mjs",
+	"type": "module",
+	"scripts": {
+		"test": "pnpm run '/test:.*/'",
+		"test:code": "node ./tests/index.test.mjs",
+		"test:lint": "eslint . --fix",
+		"format": "prettier --write \"**/*.{js,mjs,json,md}\""
+	},
+	"engines": {
+		"node": ">=20.12.0",
+		"pnpm": ">=9.4"
+	},
+	"dependencies": {
+		"@eslint/js": "^9.6.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-simple-import-sort": "^12.1.0",
+		"prettier": "^3.3.2",
+		"typescript-eslint": "^7.14.1"
+	},
+	"peerDependencies": {
+		"eslint": "^8.57.0",
+		"prettier": "^3.3.2"
+	},
+	"keywords": [
+		"eslint",
+		"config",
+		"whyhankee"
+	],
+	"author": "Paul Wijhenke <paul@paulsplace.nl>",
+	"license": "ISC"
+}
