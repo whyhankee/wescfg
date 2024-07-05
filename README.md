@@ -12,7 +12,7 @@ ESlint
 
 ```JS
 // eslint.config.mjs
-import eslintConfig from "@whyhankee/eslint-config"
+import eslintConfig from "wescfg"
 
 export default [
 	{
@@ -26,7 +26,7 @@ Prettier
 
 ```JS
 // prettier.config.js
-import { prettier } from "@whyhankee/eslint-config"
+import { prettier } from "wescfg"
 
 export default prettier
 ```
