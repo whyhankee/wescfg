@@ -2,7 +2,11 @@
 
 This package provides my ESLint/Prettier config for my projects.
 
+It's kinda newish with the introduction of the flat config, it will need to grow up a little.
+
 ## Usage
+
+### Install
 
 ESlint
 

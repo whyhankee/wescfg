@@ -2,7 +2,6 @@
 	"name": "@whyhankee/eslint-config",
 	"version": "0.0.1",
 	"description": "ESLint configuration for my projects",
-	"public": true,
 	"main": "src/index.mjs",
 	"type": "module",
 	"scripts": {
@@ -15,6 +14,19 @@
 		"node": ">=20.12.0",
 		"pnpm": ">=9.4"
 	},
+	"homepage": "https://github.com/whyhankee/eslint-config",
+	"bugs": {
+    "url": "https://github.com/whyhankee/eslint-config/issues"
+  },
+	"repository": {
+    "type": "git",
+    "url": "git://github.com/whyhankee/eslint-config.git"
+  },
+	"public": true,
+	"files": [
+		"README.md",
+		"src/index.mjs"
+	],
 	"dependencies": {
 		"@eslint/js": "^9.6.0",
 		"eslint": "^8.57.0",
@@ -29,6 +41,7 @@
 	},
 	"keywords": [
 		"eslint",
+		"prettier",
 		"config",
 		"whyhankee"
 	],
