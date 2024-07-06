@@ -2,7 +2,7 @@
 
 import fs from "fs"
 
-const esLintConfig = `import {eslintConfig} from "wescfg"
+const esLintConfig = `import {eslintConfig, globals} from "wescfg"
 
 export default [
 	{
