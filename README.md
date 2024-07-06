@@ -24,4 +24,3 @@ Optionally, update the `eslint.config.js` to fit your needs.
 - Typescript-eslint recommended rules
 - Prettier integration and rules
 - Some custom ESlint rules
-- exports the `global` package to customize your environment
