@@ -1,18 +1,18 @@
 {
 	"name": "wescfg",
-	"version": "0.0.2",
-	"description": "Whyhankee's ESlint (and prettier) Config",
+	"version": "0.0.3",
+	"description": "Whyhankee's ESlint/Prettier config",
 	"main": "src/index.mjs",
 	"type": "module",
 	"scripts": {
 		"test": "pnpm run '/test:.*/'",
 		"test:code": "node ./tests/index.test.mjs",
 		"test:lint": "eslint . --fix",
-		"test:format": "prettier --write \"**/*.{js,mjs,json,md}\"",
+		"test:format": "prettier --write .",
 		"prepare": "husky"
 	},
 	"engines": {
-		"node": ">=20.12.0",
+		"node": ">=16.20.2",
 		"pnpm": ">=9.4"
 	},
 	"packageManager": "pnpm@9.4.0",
@@ -26,8 +26,13 @@
 	},
 	"files": [
 		"README.md",
-		"src/index.mjs"
+		"src/index.mjs",
+		".prettierignore"
 	],
+	"peerDependencies": {
+		"eslint": "^8.57.0",
+		"prettier": "^3.3.2"
+	},
 	"dependencies": {
 		"@eslint/js": "^9.6.0",
 		"eslint": "^8.57.0",
@@ -36,9 +41,8 @@
 		"prettier": "^3.3.2",
 		"typescript-eslint": "^7.14.1"
 	},
-	"peerDependencies": {
-		"eslint": "^8.57.0",
-		"prettier": "^3.3.2"
+	"devDependencies": {
+		"husky": "9.0.11"
 	},
 	"keywords": [
 		"eslint",
@@ -47,8 +51,5 @@
 		"whyhankee"
 	],
 	"author": "Paul Wijhenke <paul@paulsplace.nl>",
-	"license": "ISC",
-	"devDependencies": {
-		"husky": "9.0.11"
-	}
+	"license": "ISC"
 }
