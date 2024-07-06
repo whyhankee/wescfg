@@ -31,6 +31,8 @@ import { prettier } from "wescfg"
 export default prettier
 ```
 
+Create a `.prettierignore` in the root of the project (or get the one installed with this package).
+
 ## Implements
 
 - ESLint standard recommended rules
