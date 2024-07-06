@@ -4,34 +4,19 @@ This package provides my ESLint/Prettier config for my projects.
 
 It's kinda newish with the introduction of the flat config, it will need to grow up a little.
 
-## Usage
+## Install
 
-### Install
+Add wescfg to your application
 
-ESlint
+`npm install wescfg`
 
-```JS
-// eslint.config.mjs
-import eslintConfig from "wescfg"
+Run init script
 
-export default [
-	{
-		files: ["./src/**/*.{ts}"],
-	},
-	...eslintConfig,
-]
-```
+`npx wescfg`
 
-Prettier
+## Adapt
 
-```JS
-// prettier.config.js
-import { prettier } from "wescfg"
-
-export default prettier
-```
-
-Create a `.prettierignore` in the root of the project (or get the one installed with this package).
+Optionally, update the `eslint.config.js` to fit your needs.
 
 ## Implements
 
@@ -39,3 +24,4 @@ Create a `.prettierignore` in the root of the project (or get the one installed 
 - Typescript-eslint recommended rules
 - Prettier integration and rules
 - Some custom ESlint rules
+- exports the `global` package to customize your environment
