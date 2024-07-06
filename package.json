@@ -1,6 +1,6 @@
 {
 	"name": "wescfg",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Whyhankee's ESlint (and prettier) Config",
 	"main": "src/index.mjs",
 	"type": "module",
@@ -8,7 +8,7 @@
 		"test": "pnpm run '/test:.*/'",
 		"test:code": "node ./tests/index.test.mjs",
 		"test:lint": "eslint . --fix",
-		"format": "prettier --write \"**/*.{js,mjs,json,md}\"",
+		"test:format": "prettier --write \"**/*.{js,mjs,json,md}\"",
 		"prepare": "husky"
 	},
 	"engines": {

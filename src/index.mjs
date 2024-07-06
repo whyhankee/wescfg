@@ -44,4 +44,12 @@ export const prettierConfig = {
 	singleQuote: false,
 	trailingComma: "all",
 	useTabs: true,
+	overrides: [
+		{
+			files: ["*.yml", "*.yaml"],
+			options: {
+				useTabs: false,
+			},
+		},
+	],
 }
