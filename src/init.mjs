@@ -22,7 +22,7 @@ const prettierConfig = `import {prettierConfig} from "wescfg"
 export default prettierConfig
 `
 
-const prettierIgnore = `pnpm-lock.json
+const prettierIgnore = `pnpm-lock.yaml
 package-lock.json
 `
 
