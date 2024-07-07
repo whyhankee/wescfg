@@ -1,6 +1,6 @@
 {
 	"name": "wescfg",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Whyhankee's ESlint/Prettier config",
 	"main": "src/index.mjs",
 	"type": "module",
