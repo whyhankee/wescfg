@@ -6,13 +6,36 @@ It's kinda newish with the introduction of the flat config, it will need to grow
 
 ## Install
 
-Add wescfg to your application
+### Setup peerDependencies
+
+To ensure installation of required peerDependencies, add to `.npmrc`
+
+```
+auto-install-peers=true
+```
+
+### Install wescfg
 
 `npm install wescfg`
 
-Run init script
+### Run init script
 
 `npx wescfg`
+
+This will create the following configuration files:
+
+- eslint.config.js
+- prettier.config.js
+- .prettierignore
+- .editorconfig
+
+
+### Create scripts in package.json:
+
+```
+"lint": "eslint . --fix",
+"format": "prettier --write .",
+```
 
 ## Adapt
 
