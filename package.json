@@ -15,7 +15,7 @@
 		"wescfg-init": "./src/init.mjs"
 	},
 	"engines": {
-		"node": ">=16.20.2",
+		"node": ">=18.20.3",
 		"pnpm": ">=9.4"
 	},
 	"packageManager": "pnpm@9.4.0",
