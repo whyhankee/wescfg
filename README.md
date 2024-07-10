@@ -29,7 +29,6 @@ This will create the following configuration files:
 - .prettierignore
 - .editorconfig
 
-
 ### Create scripts in package.json:
 
 ```
