@@ -24,7 +24,10 @@ export default prettierConfig
 `
 
 // https://prettier.io/docs/en/ignore.html
-const prettierIgnore = `pnpm-lock.yaml
+const prettierIgnore = `coverage/
+dist/
+
+pnpm-lock.yaml
 package-lock.json
 `
 
