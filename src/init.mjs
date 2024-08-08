@@ -1,6 +1,22 @@
 #!/usr/bin/env node
 import fs from "fs"
 
+const cleanExit = 0
+
+const options = {
+	help: process.argv.includes("-h") || process.argv.includes("--help"),
+	overwrite: process.argv.includes("-f"),
+}
+
+if (options.help) {
+	console.info(`
+Usage: init [-h] [-f]
+  -h help (this message)
+  -f force overwrite existing files
+	`)
+	process.exit(cleanExit)
+}
+
 // https://eslint.org/docs/user-guide/configuring
 const esLintConfig = `import {eslintConfig, globals} from "wescfg"
 
@@ -61,7 +77,7 @@ const templates = {
 
 // Create files
 Object.entries(templates).forEach(([filename, content]) => {
-	if (fs.existsSync(filename)) {
+	if (!options.overwrite && fs.existsSync(filename)) {
 		console.info(`File '${filename}' already exists, skipping`)
 		return
 	}

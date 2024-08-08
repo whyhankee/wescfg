@@ -10,7 +10,7 @@ It's kinda newish with the introduction of the flat config, it will need to grow
 
 To ensure installation of required peerDependencies, add to `.npmrc`
 
-```
+```text
 auto-install-peers=true
 ```
 
@@ -20,7 +20,10 @@ auto-install-peers=true
 
 ### Run init script
 
-`npx wescfg`
+`npx wescfg [-h] [-f]`
+
+- -h = show help
+- -f = overwrite existing files
 
 This will create the following configuration files:
 
@@ -31,7 +34,7 @@ This will create the following configuration files:
 
 ### Create scripts in package.json:
 
-```
+```bash
 "lint": "eslint . --fix",
 "format": "prettier --write .",
 ```
