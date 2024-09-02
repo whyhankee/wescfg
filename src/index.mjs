@@ -18,6 +18,7 @@ export const eslintRules = {
 
 	// readability
 	"no-trailing-spaces": "error",
+	curly: "error",
 
 	// simple-import-sort plugin
 	"simple-import-sort/exports": "error",
