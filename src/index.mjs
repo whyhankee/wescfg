@@ -26,10 +26,12 @@ export const eslintRules = {
 
 export const eslintConfig = [
 	{
+		ignores: ["dist/*"],
+	},
+	{
 		plugins: {
 			"simple-import-sort": simpleImportSort,
 		},
-		ignores: ["dist/*"],
 	},
 	eslint.configs.recommended,
 	...tseslint.configs.recommended,
