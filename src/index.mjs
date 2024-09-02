@@ -17,7 +17,6 @@ export const eslintRules = {
 	"require-await": "error",
 
 	// readability
-	"no-magic-numbers": "error",
 	"no-trailing-spaces": "error",
 
 	// simple-import-sort plugin
