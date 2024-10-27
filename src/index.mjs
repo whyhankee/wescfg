@@ -6,7 +6,8 @@ import tseslint from "typescript-eslint"
 
 export {globals}
 
-export const eslintRules = {
+// Our own prettier config
+const eslintRules = {
 	// utility
 	"no-console": [
 		"error",
@@ -25,6 +26,25 @@ export const eslintRules = {
 	"simple-import-sort/imports": "error",
 }
 
+// Overrides for the prettier config
+const eslintPrettierOverride = {
+	"no-multiple-empty-lines": [
+		"error",
+		{
+			max: 2,
+		},
+	],
+	"key-spacing": [
+		"error",
+		{
+			beforeColon: false,
+			afterColon: true,
+			mode: "strict",
+		},
+	],
+}
+
+// Export esLintConfig
 export const eslintConfig = [
 	{
 		ignores: ["dist/*"],
@@ -38,6 +58,7 @@ export const eslintConfig = [
 	...tseslint.configs.recommended,
 	{rules: eslintRules},
 	eslintConfigPrettier,
+	{rules: eslintPrettierOverride},
 ]
 
 export const prettierConfig = {
