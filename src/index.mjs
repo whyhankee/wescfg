@@ -47,7 +47,7 @@ const eslintPrettierOverride = {
 // Export esLintConfig
 export const eslintConfig = [
 	{
-		ignores: ["dist/*"],
+		ignores: ["coverage/*", "dist/*"],
 	},
 	{
 		plugins: {
