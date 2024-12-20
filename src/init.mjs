@@ -61,7 +61,7 @@ insert_final_newline = true
 indent_style = tab
 max_line_length = 100
 
-[*.{yml,yaml}]
+[*.{yml,yaml,md}]
 indent_style = space
 `
 
