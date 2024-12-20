@@ -91,7 +91,7 @@ export const prettierConfig = {
 	tabWidth: 2,
 	overrides: [
 		{
-			files: ["*.yml", "*.yaml"],
+			files: ["*.yml", "*.yaml", "*.md"],
 			options: {
 				useTabs: false,
 			},
